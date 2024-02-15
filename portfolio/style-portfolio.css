@@ -1,0 +1,49 @@
+:root {
+    --royal-purple: #7d5ba6;
+    --tea-green: #cce2a3;
+    --celadon-2: #89ce94;
+    --cadet-gray: #99a1a6;
+}
+
+body {
+    background-color: var(--royal-purple);
+    color: var(--tea-green);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.content {
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: var(--cadet-gray);
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--celadon-2);
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--tea-green);
+    color: var(--royal-purple);
+}

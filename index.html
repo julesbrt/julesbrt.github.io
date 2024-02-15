@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Under Construction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules Brutschy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <a href="https://github.com/julesbrt" target="_blank" class="github-link">
-            <h1>Jules</h1>
-        </a>
-        <p>Etudiant en BUT Réseaux et Télécommunications - Cybersécurité</p>
-        <p>I'm currently working on developing this page. Stay tuned for updates!</p>
-        <img src="IMG_5530.jpeg" alt="Gringo" title="Le CYP">
+    <div id="french" class="language-section">
+        <h1>Jules</h1>
+        <p>Actuellement étudiant en 3ème année de BUT Réseaux et Télécommunications spécialité cybersécurité. Work in progress.</p>
+
+        <button onclick="switchLanguage('english')" class="language-button">English</button>
+        
+        <a href="/cv/" class="button">CV</a>
+        <a href="/portfolio/" class="button">Portfolio</a>
     </div>
+    <div id="english" class="language-section" style="display:none;">
+        <h1>Jules</h1>
+        <p>Currently a 3rd-year student in BUT Networks and Telecommunications, specializing in cybersecurity. Work in progress.</p>
+        
+        <button onclick="switchLanguage('french')" class="language-button">Français</button>
+        
+        <a href="/cv/" class="button">CV</a>
+        <a href="/portfolio/" class="button">Portfolio</a>
+    </div>
+    <script>
+        function switchLanguage(lang) {
+            document.getElementById('french').style.display = (lang === 'english') ? 'none' : 'block';
+            document.getElementById('english').style.display = (lang === 'english') ? 'block' : 'none';
+        }
+    </script>
 </body>
 </html>
