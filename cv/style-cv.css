@@ -1,15 +1,17 @@
 :root {
-   --reseda-green: #857e61;
-   --khaki: #b7a196;
-   --thistle: #ddc3d0;
-   --lavender-web: #dbdaea;
-   --light-cyan: #dbfcff;
-}
+   --dark-purple: #242038ff;
+   --slate-blue: #725ac1ff;
+   --tropical-indigo: #8d86c9ff;
+   --french-gray: #cac4ceff;
+   --linen: #f7ece1ff;
+   --black: #000000;
+   --white: #ffffff;
+ } 
 
 body {
-   background-color: var(--lavender-web);
-   color: var(--reseda-green);
-   font-family: Arial, sans-serif;
+   background-color: var(--french-gray);
+   color: var(--black);
+   font-family: 'Lato', Arial, sans-serif;
    margin: 0;
    padding: 0;
    display: flex;
@@ -21,7 +23,7 @@ body {
    left: 0;
    width: 200px;
    height: 100%;
-   background-color: var(--light-cyan);
+   background-color: var(--tropical-indigo);
    padding: 20px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    display: flex;
@@ -45,7 +47,7 @@ body {
 .profile h1 {
    margin: 0;
    font-size: 1.5em;
-   color: var(--reseda-green);
+   color: var(--white);
 }
 
 .sidebar ul {
@@ -60,11 +62,11 @@ body {
 
 .sidebar ul li a {
    text-decoration: none;
-   color: var(--reseda-green);
+   color: var(--);
 }
 
 .sidebar ul li a:hover {
-   color: var(--khaki);
+   color: var(--tropical-indigo);
 }
 
 .social-links {
@@ -96,7 +98,7 @@ body {
    width: 800px;
    max-width: 100%;
    padding: 20px;
-   background-color: var(--light-cyan);
+   background-color: var(--white);
    border-radius: 8px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -104,24 +106,24 @@ body {
 h1 {
    font-size: 2em;
    margin-bottom: 10px;
-   color: var(--reseda-green);
+   color: var(--dark-purple);
 }
 
 h2 {
    font-size: 1.5em;
    margin-top: 20px;
-   color: var(--thistle);
+   color: var(--slate-blue);
 }
 
 p {
-   color: var(--khaki);
+   color: var(--black);
 }
 
 .button {
    display: inline-block;
    margin-top: 20px;
-   background-color: var(--thistle);
-   color: var(--reseda-green);
+   background-color: var(--tropical-indigo);
+   color: var(--white);
    text-decoration: none;
    font-size: 1em;
    padding: 10px 20px;
@@ -131,8 +133,8 @@ p {
 }
 
 .button:hover {
-   background-color: var(--khaki);
-   color: var(--lavender-web);
+   background-color: var(--tropical-indigo);
+   color: var(--french-gray);
 }
 
 .contact-info {
@@ -141,7 +143,7 @@ p {
 
 .contact-info p {
    margin: 5px 0;
-   color: var(--khaki);
+   color: var(--black);
 }
 
 .section {
@@ -161,7 +163,7 @@ p {
 }
 
 a {
-   color: var(--reseda-green);
+   color: var(--black);
    text-decoration: none;
 }
 
