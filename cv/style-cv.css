@@ -54,19 +54,24 @@ body {
    list-style-type: none;
    padding: 0;
    margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* Center the list items */
 }
 
 .sidebar ul li {
    margin-bottom: 10px;
+   width: 100%; /* Make list items take full width */
+   text-align: center; /* Center the text inside the list items */
 }
 
 .sidebar ul li a {
    text-decoration: none;
-   color: var(--);
+   color: var(--white);
 }
 
 .sidebar ul li a:hover {
-   color: var(--tropical-indigo);
+   color: var(--slate-blue);
 }
 
 .social-links {
@@ -134,7 +139,7 @@ p {
 
 .button:hover {
    background-color: var(--tropical-indigo);
-   color: var(--french-gray);
+   color: var (--french-gray);
 }
 
 .contact-info {
