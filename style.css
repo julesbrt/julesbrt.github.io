@@ -1,14 +1,11 @@
 :root {
-    --english-violet: #654f6f;
-    --ultra-violet: #5c5d8d;
-    --cadet-gray: #99a1a6;
-    --celadon: #a8c69f;
-    --tea-green: #cce2a3;
-    --jet: #333333;
-    --eminence: #643173;
-    --royal-purple: #7d5ba6;
-    --cambridge-blue: #86a59c;
-    --celadon-2: #89ce94;
+    --dark-purple: #242038ff;
+    --slate-blue: #725ac1ff;
+    --tropical-indigo: #8d86c9ff;
+    --french-gray: #cac4ceff;
+    --linen: #f7ece1ff;
+    --black: #000000;
+    --white: #ffffff;
 }
 
 body, html {
@@ -18,7 +15,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cadet-gray);
+    background-color: var(--french-gray);
 }
 
 .language-section {
@@ -27,12 +24,12 @@ body, html {
 
 h1 {
     font-size: 4em;
-    color: var(--english-violet);
+    color: var(--dark-purple);
 }
 
 p {
     font-size: 1.5em;
-    color: var(--ultra-violet);
+    color: var(--slate-blue);
     margin: 20px auto;
 }
 
@@ -40,8 +37,8 @@ p {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
-    background-color: var(--celadon); 
-    color: var(--english-violet); 
+    background-color: var(--tropical-indigo);
+    color: var(--dark-purple);
     text-decoration: none;
     font-size: 1em;
     border: none;
@@ -50,15 +47,15 @@ p {
 }
 
 .button:hover {
-    background-color: var(--tea-green); 
+    background-color: var(--linen);
 }
 
 .language-button {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
-    background-color: var(--royal-purple); 
-    color: white; 
+    background-color: var(--slate-blue);
+    color: var(--white);
     text-decoration: none;
     font-size: 1em;
     border: none;
@@ -67,5 +64,5 @@ p {
 }
 
 .language-button:hover {
-    background-color: var(--eminence); 
+    background-color: var(--dark-purple);
 }
