@@ -56,13 +56,13 @@ body {
    margin: 0;
    display: flex;
    flex-direction: column;
-   align-items: center; /* Center the list items */
+   align-items: center; 
 }
 
 .sidebar ul li {
    margin-bottom: 10px;
-   width: 100%; /* Make list items take full width */
-   text-align: center; /* Center the text inside the list items */
+   width: 100%; 
+   text-align: center; 
 }
 
 .sidebar ul li a {

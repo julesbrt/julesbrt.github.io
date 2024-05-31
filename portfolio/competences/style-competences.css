@@ -1,0 +1,133 @@
+:root {
+    --dark-purple: #242038ff;
+    --slate-blue: #725ac1ff;
+    --tropical-indigo: #8d86c9ff;
+    --french-gray: #cac4ceff;
+    --linen: #f7ece1ff;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--french-gray);
+    color: var(--dark-purple);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: var(--tropical-indigo);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--white);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.sidebar ul li a:hover {
+    color: var(--slate-blue);
+}
+
+.social-links {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin: 0 5px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 220px;
+}
+
+.content {
+    width: 800px;
+    max-width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 50px;
+    color: var(--dark-purple);
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#links {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#links a {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--slate-blue);
+    text-decoration: none;
+}
+
+#links a:hover {
+    color: var(--dark-purple);
+}
