@@ -1,0 +1,235 @@
+:root {
+  color-scheme: dark;
+  --bg: #120004;
+  --fg: #f0e6e8;
+  --link: #bc6779;
+  --accent: #a6334d;
+  --deeper-accent: #900020;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1.25rem;
+  background: var(--bg);
+  color: var(--fg);
+  font: 14px/1.6 "Lucida Console", "Courier New", monospace;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+header,
+main,
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin: 0 0 .75rem;
+  font-size: 1.4rem;
+  letter-spacing: .12em;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  display: inline-block;
+  margin: .25rem .5rem;
+}
+
+.title {
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+}
+
+.artist {
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+main {
+  padding: 1.25rem 0;
+}
+
+main p {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* ---------- footer ------------ */
+
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  padding-right: 10%;
+  font-size: .8rem;
+  text-align: right;
+}
+
+footer img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 .6rem auto;
+}
+
+#z-0,
+#z-1,
+#z-2 {
+  display: inline-block;
+}
+
+#z-0 {
+  color: #bc6779;
+}
+
+#z-1 {
+  color: #a6334d;
+}
+
+#z-2 {
+  color: var(--deeper-accent);
+}
+
+/* ---------- album page ------------ */
+
+.album-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin: 2rem auto;
+  max-width: 100%;
+}
+
+.album-media {
+  flex: 0 0 300px;
+}
+
+.album-main-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--accent);
+}
+
+.album-info {
+  flex: 1;
+}
+
+.album-info h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.album-meta {
+  color: var(--link);
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem 0 !important;
+}
+
+.album-info p {
+  margin-left: 0 !important;
+  max-width: 100% !important;
+  margin-bottom: 1rem;
+}
+
+/*Responsive*/
+@media (max-width: 650px) {
+  .album-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .album-media {
+    flex: 0 0 250px;
+    width: 250px;
+  }
+
+  .album-info {
+    text-align: center;
+  }
+}
+
+
+/* ---------- cd binder ------------ */
+
+.album-grid {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto;
+  max-width: 100%;
+
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem 1.5rem;
+}
+
+.album-grid li {
+  text-align: center;
+}
+
+.album-grid li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.album-grid li a:hover .album-cover,
+.album-grid li a:focus .album-cover {
+  border-color: var(--link);
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.album-cover {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: 0 auto 0.75rem auto;
+  border: 1px solid var(--accent);
+}
+
+.album-grid h3 {
+  font-size: 1rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.album-grid p {
+  font-size: 0.85rem;
+  color: var(--link);
+  margin: 0;
+  max-width: 100%;
+}
+
+/* ---------- recipes page ------------ */
